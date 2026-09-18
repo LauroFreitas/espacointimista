@@ -7,7 +7,7 @@ const faqs = [
       "Sim. Prefira uma alimentação leve e deixe pelo menos 1 hora de intervalo antes da massagem.",
   },
   {
-    question: "Preciso tomar banho antes da sessão?",
+    question: "Como posso chegar preparada para esse momento?",
     answer:
       "Para que você aproveite plenamente a experiência, sugerimos chegar ao atendimento com o corpo limpo e preparado para receber o cuidado. Evite, se possível, perfumes, loções ou cremes corporais antes da sessão. Utilizamos produtos profissionais de fragrância neutra, preservando a harmonia dos aromas e a experiência sensorial preparada para você. Pequenos detalhes fazem parte do cuidado.",
   },
@@ -15,6 +15,11 @@ const faqs = [
     question: "Preciso agendar a sessão?",
     answer:
       "Sim. Cada sessão é só sua, com hora marcada, para a sala já estar pronta quando você chegar.",
+  },
+  {
+    question: "As sessões são somente femininas?",
+    answer:
+      "Sim. Os atendimentos são exclusivos para mulheres, em um espaço pensado especialmente para o cuidado feminino.",
   },
   {
     question: "Eu escolho a terapia ou o profissional indica?",
