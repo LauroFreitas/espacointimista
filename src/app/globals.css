@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #f4eee6;
+  --cream: #ebe2d4;
+  --sand: #d3c2a8;
+  --gold: #b08958;
+  --gold-soft: #c9ae82;
+  --blush: #d2c0a6;
+  --rose: #a67c52;
+  --plum: #2a211c;
+  --stone: #5a4e44;
+  --ink: #1c1713;
+  --espresso: #241e1a;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-blush: var(--blush);
+  --color-rose: var(--rose);
+  --color-plum: var(--plum);
+  --color-stone: var(--stone);
+  --color-ink: var(--ink);
+  --color-espresso: var(--espresso);
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-syne);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-outfit), sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 35%, transparent);
+  color: var(--ink);
+}
+
+.grain {
+  position: relative;
+}
+
+.grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.gold-rule {
+  height: 1px;
+  width: 4.5rem;
+  background: linear-gradient(90deg, transparent, var(--gold-soft), var(--gold), transparent);
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  color: var(--gold);
+}
+
+.ornament::before,
+.ornament::after {
+  content: "";
+  height: 1px;
+  width: 2.4rem;
+  background: linear-gradient(90deg, transparent, currentColor);
+}
+
+.ornament::after {
+  background: linear-gradient(90deg, currentColor, transparent);
+}
