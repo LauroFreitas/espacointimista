@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Preciso tomar banho antes da sessão?",
     answer:
-      "Se puder, venha de banho tomado e sem creme no corpo. O creme na pele atrapalha o deslizamento dos óleos e o toque da massagem.",
+      "Para que você aproveite plenamente a experiência, sugerimos chegar ao atendimento com o corpo limpo e preparado para receber o cuidado. Evite, se possível, perfumes, loções ou cremes corporais antes da sessão. Utilizamos produtos profissionais de fragrância neutra, preservando a harmonia dos aromas e a experiência sensorial preparada para você. Pequenos detalhes fazem parte do cuidado.",
   },
   {
     question: "Preciso agendar a sessão?",
