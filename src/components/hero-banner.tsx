@@ -87,36 +87,40 @@ export function HeroBanner() {
             />
           </motion.div>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-espresso/35 via-espresso/20 to-espresso/55" />
+          <div className="absolute inset-0 bg-white/80" />
           <div className="grain pointer-events-none absolute inset-0 z-[1]" />
         </motion.div>
 
         <motion.div
-          className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-6 text-center text-ivory md:px-8"
+          className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-6 text-center text-ink md:px-8"
           style={
             reducedMotion
               ? undefined
               : { opacity: fadeOut, y: contentY, visibility: layerVisibility }
           }
         >
-          <h1 className="flex flex-col items-center">
-            <span className="font-display text-[clamp(4.8rem,18vw,13.5rem)] leading-[0.82] font-bold tracking-[-0.05em] uppercase">
-              Espaço
-            </span>
-            <span className="mt-3 font-display text-xl font-semibold tracking-[0.28em] uppercase md:text-2xl">
-              Intimista
-            </span>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg leading-8 text-ivory/90 md:text-xl">
-            Um ambiente calmo para cuidar do corpo. Atendimento individual, com
-            hora marcada.
-          </p>
-          <HopButton
-            href="#terapias"
-            className="mt-10 inline-flex w-fit bg-gold px-7 py-3.5 text-base font-medium text-espresso transition-colors hover:bg-gold-soft"
-          >
-            Ver terapias
-          </HopButton>
+            <h1 className="flex flex-col items-center">
+              <Image
+                src="/logo-espaco-intimista.png"
+                alt="Espaço Intimista"
+                width={3840}
+                height={1558}
+                priority
+                quality={100}
+                unoptimized
+                className="h-auto w-[min(86vw,42rem)]"
+              />
+            </h1>
+            <p className="mt-8 max-w-xl text-lg leading-8 text-ink/80 md:text-xl">
+              Um ambiente calmo para cuidar do corpo. Atendimento individual, com
+              hora marcada.
+            </p>
+            <HopButton
+              href="#terapias"
+              className="mt-10 inline-flex w-fit bg-gold px-7 py-3.5 text-base font-medium text-espresso transition-colors hover:bg-gold-soft"
+            >
+              Ver terapias
+            </HopButton>
         </motion.div>
       </div>
     </section>
