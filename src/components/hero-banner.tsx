@@ -43,7 +43,7 @@ export function HeroBanner() {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- sync once and on resize
   }, []);
 
-  const scale = useTransform(progress, [0, 0.88], [1, 1.45]);
+  const scale = useTransform(progress, [0, 0.88], [1, 1.08]);
   const filter = useTransform(progress, [0, 0.8], ["blur(0px)", "blur(28px)"]);
   const fadeOut = useTransform(progress, [0, 0.4, 0.88], [1, 1, 0]);
   const contentY = useTransform(progress, [0, 0.88], [0, -48]);
@@ -78,8 +78,8 @@ export function HeroBanner() {
             }
           >
             <Image
-              src="https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=2400&q=80"
-              alt="Sala de massagem pronta para atendimento, com maca e toalhas"
+              src="/hero-fundo-horizontal.jpg"
+              alt="Pessoa em sessão de cuidado facial, com máscara de ervas"
               fill
               priority
               className="object-cover object-center"
@@ -87,12 +87,12 @@ export function HeroBanner() {
             />
           </motion.div>
 
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-espresso/75" />
           <div className="grain pointer-events-none absolute inset-0 z-[1]" />
         </motion.div>
 
         <motion.div
-          className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-6 text-center text-ink md:px-8"
+          className="relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-6 text-center text-ivory md:px-8"
           style={
             reducedMotion
               ? undefined
@@ -104,14 +104,14 @@ export function HeroBanner() {
                 src="/logo-espaco-intimista.png"
                 alt="Espaço Intimista"
                 width={3840}
-                height={1558}
+                height={1561}
                 priority
                 quality={100}
                 unoptimized
                 className="h-auto w-[min(86vw,42rem)]"
               />
             </h1>
-            <p className="mt-8 max-w-xl text-lg leading-8 text-ink/80 md:text-xl">
+            <p className="mt-8 max-w-xl text-lg leading-8 text-ivory/90 md:text-xl">
               Um ambiente calmo para cuidar do corpo. Atendimento individual, com
               hora marcada.
             </p>
